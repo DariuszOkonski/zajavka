@@ -1,7 +1,17 @@
 package week_02.day6ext.plant;
 
 public class Plant {
-    public String color = "green";
+    private String color;
+    private int numberOfLeaves;
+
+    public Plant(String color, int numberOfLeaves) {
+        this.color = color;
+        this.numberOfLeaves = numberOfLeaves;
+    }
+
+    public String getColor() {
+        return color;
+    }
 
     public void rise() {
         System.out.println("I'm rising!!!");
@@ -15,6 +25,7 @@ public class Plant {
     public String toString() {
         return "Plant{" +
                 "color='" + color + '\'' +
+                ", numberOfLeaves=" + numberOfLeaves +
                 '}';
     }
 }
