@@ -14,7 +14,7 @@ public class Main {
 
     private static int method1() {
         System.out.println("method1");
-        return 2;
+        return 1;
     }
 
     private static int method2(int i) {
@@ -29,6 +29,6 @@ public class Main {
 
     private static int method4() {
         System.out.println("method4");
-        return 3;
+        return 4;
     }
 }
