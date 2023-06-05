@@ -8,6 +8,8 @@ public class Main {
 
         long d = 10;
         long e = c + d;
+
+        System.out.println("Hello world");
     }
 }
 
