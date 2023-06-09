@@ -7,7 +7,7 @@ public class Exercises {
 //        ex2palindrome("romet");
 //        ex3printChristmasTree('#', 9);
 //        ex4paintingExercise(100);
-//        ex5firstNumber(30);
+        ex5firstNumber(1000);
 //        ex6someNumbers(10);
 //        ex7fibonacci(10);
 //        ex8treeNumbers(999, 4);
@@ -60,16 +60,24 @@ public class Exercises {
         System.out.print("]");
     }
 
-    private static void ex5firstNumber(int number) {
-        if (number < 2)
-            return;
+    private static void ex5firstNumber(int limit) {
+        for (int i = 0; i < limit; i++) {
+            boolean first = true;
 
-        for (int i = 2; i < number; i++) {
-            if(number % i == 0) {
-                System.out.println(i + ": is not first number");
-                continue;
+            if(i < 2) {
+                first = false;
+            } else {
+                for (int j = 2; j < i / 2; j++) {
+                    if(i % j == 0) {
+                        first = false;
+                        break;
+                    }
+                }
             }
-            System.out.println(i + ": is first number");
+
+            if(first) {
+                System.out.println(i);
+            }
         }
     }
 
