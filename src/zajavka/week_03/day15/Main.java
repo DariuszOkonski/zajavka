@@ -4,13 +4,10 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {4, 6, 1, 2, 5, 2};
+        int[] arr = {4, 6, 1, 2, 5, 2, 24, 11, 1, 54, 2, 6};
         System.out.println("Before: " + Arrays.toString(arr));
         bubbleSorting(arr);
         System.out.println("After: " + Arrays.toString(arr));
-
-//        int result = Arrays.binarySearch(arr, 6);
-//        System.out.println(result);
     }
 
     public static void bubbleSorting(int[] array) {
@@ -21,7 +18,7 @@ public class Main {
                 if (array[i] > array[i + 1]) {
                     isSorted = false;
 
-                    swap(array, i);;
+                    swap(array, i);
                 }
             }
         }
