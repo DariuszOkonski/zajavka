@@ -12,9 +12,10 @@ public class Main {
 
     public static void bubbleSorting(int[] array) {
         boolean isSorted = false;
+        int size = array.length - 1;
         while (!isSorted) {
             isSorted = true;
-            for (int i = 0; i < array.length - 1; i++) {
+            for (int i = 0; i < (size - i); i++) {
                 if (array[i] > array[i + 1]) {
                     isSorted = false;
 
