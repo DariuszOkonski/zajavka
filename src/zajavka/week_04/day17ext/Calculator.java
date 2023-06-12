@@ -1,13 +1,26 @@
 package zajavka.week_04.day17ext;
 
+import java.util.Objects;
+
 public class Calculator {
-    public String model;
+    public String name;
 
     public Calculator(String model) {
-        this.model = model;
+        this.name = model;
     }
-    public void calculate(String model) {
-        System.out.println(this.model);
-        System.out.println(model);
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Calculator that = (Calculator) o;
+
+        return Objects.equals(name, that.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return name != null ? name.hashCode() : 0;
     }
 }
