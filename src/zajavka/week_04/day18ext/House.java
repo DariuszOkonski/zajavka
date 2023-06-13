@@ -1,14 +1,19 @@
 package zajavka.week_04.day18ext;
 
-public class Flat {
+public class House extends Building {
     public int noOfRooms = 3;
     public String name;
+    public boolean hasWindows = true;
 
     @Override
     public String toString() {
-        return "Flat{" +
+        return "House{" +
                 "noOfRooms=" + noOfRooms +
                 ", name='" + name + '\'' +
+                ", hasWindows=" + hasWindows +
+                ", address='" + address + '\'' +
+                ", number=" + number +
                 '}';
     }
 }
+
