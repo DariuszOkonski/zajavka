@@ -1,6 +1,6 @@
 package zajavka.week_04.day19;
 
-public class Animal {
+class Animal {
     private String name;
 
 //    public Animal() {

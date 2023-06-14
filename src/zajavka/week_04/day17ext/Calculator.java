@@ -2,7 +2,7 @@ package zajavka.week_04.day17ext;
 
 import java.util.Objects;
 
-public class Calculator {
+class Calculator {
     public String name;
 
     public Calculator(String model) {

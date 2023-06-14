@@ -1,6 +1,6 @@
 package zajavka.week_04.day19;
 
-public class Labrador extends Dog {
+class Labrador extends Dog {
     public Labrador() {
         super();
         System.out.println("Labrador created");

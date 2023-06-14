@@ -1,6 +1,6 @@
 package zajavka.week_04.day17;
 
-public class MethodsOverloading {
+class MethodsOverloading {
     private void overloadedMethod(String arg1, String arg2) {
         System.out.println("String arg1 + String arg2: " + arg1 + arg2);
     }

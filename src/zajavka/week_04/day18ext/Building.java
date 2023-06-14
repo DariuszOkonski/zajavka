@@ -1,6 +1,6 @@
 package zajavka.week_04.day18ext;
 
-public class Building {
+class Building {
     public String address = "St. Paul II";
     public int number = 12;
 

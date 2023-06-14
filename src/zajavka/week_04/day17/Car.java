@@ -2,7 +2,7 @@ package zajavka.week_04.day17;
 
 import java.util.Objects;
 
-public class Car {
+class Car {
     private String company;
     private String model;
     private int productionYear;

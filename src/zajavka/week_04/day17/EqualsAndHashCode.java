@@ -2,7 +2,7 @@ package zajavka.week_04.day17;
 
 import java.math.BigDecimal;
 
-public class EqualsAndHashCode {
+class EqualsAndHashCode {
     public static void main(String[] args) {
 //        decimalTypesComparison();
         equalsExample();

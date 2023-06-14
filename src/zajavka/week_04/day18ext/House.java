@@ -1,6 +1,6 @@
 package zajavka.week_04.day18ext;
 
-public class House extends Building {
+class House extends Building {
     public int noOfRooms = 3;
     public String name;
     public boolean hasWindows = true;

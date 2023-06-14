@@ -1,6 +1,6 @@
 package zajavka.week_04.day16ext;
 
-public class Tuna {
+class Tuna {
     public String name;
     public int age;
     public Integer length;

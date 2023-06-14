@@ -2,7 +2,7 @@ package zajavka.week_04.day16;
 
 import java.util.Arrays;
 
-public class VariableVisibilityScope {
+class VariableVisibilityScope {
     private int a;
     private Integer b;
 
