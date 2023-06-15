@@ -10,7 +10,6 @@ public class Cat extends Animal {
         this("Kowalski");
         System.out.println("Cat constructor");
     }
-
     public Cat(String surname) {
         this.surname = surname;
     }
