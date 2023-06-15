@@ -1,7 +1,10 @@
 package zajavka.week_04.day20ext;
 
 class Cat extends Animal {
-    private String name = "Jurek";
+
+    private static String getJurek() {
+        return "Jurek";
+    }
 
     {
         this.name = "Tasza";
@@ -10,4 +13,6 @@ class Cat extends Animal {
     public Cat(String name) {
         this.name = name;
     }
+
+    private String name = getJurek();
 }
