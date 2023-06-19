@@ -1,4 +1,4 @@
-package zajavka.week_05.day21;
+package zajavka.week_05.day21.gettersSetters;
 
 public class App {
     public static void main(String[] args) {

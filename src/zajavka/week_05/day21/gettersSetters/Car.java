@@ -1,4 +1,4 @@
-package zajavka.week_05.day21;
+package zajavka.week_05.day21.gettersSetters;
 
 public class Car {
     private String company;
@@ -12,6 +12,7 @@ public class Car {
         this.model = model;
         this.productionYear = productionYear;
     }
+
 
     public String getCompany() {
         return company == null ? "default" : this.company;
@@ -30,7 +31,7 @@ public class Car {
     }
 
     public void setCompany(String company) {
-        if("brak".equals(company)) {
+        if ("brak".equals(company)) {
             System.out.println("No way mate!");
             return;
         }
