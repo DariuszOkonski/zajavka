@@ -2,15 +2,29 @@ package zajavka.week_05.day22ext.interfaces;
 
 public class App {
     public static void main(String[] args) {
-        Ostrich ostrich = new Ostrich();
+        Animal[] animals = new Animal[20];
 
-        runAnimal(ostrich);
+
+        for (int i = 0; i < animals.length; i++) {
+            double random = Math.random();
+
+            if(random < 0.3) {
+                animals[i] = new Mouse();
+            } else if(random < 0.6) {
+                animals[i] = new Dog();
+            } else {
+                animals[i] = new Ostrich();
+            }
+        }
+
+        for (Animal animal : animals) {
+            runAnimal(animal);
+        }
     }
 
     public static void runAnimal(Animal animal) {
-        animal.run();
-        animal.swim();
-        animal.live();
+        animal.fly();
+        System.out.println("------");
     }
 }
 
