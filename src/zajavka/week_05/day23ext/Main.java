@@ -2,16 +2,16 @@ package zajavka.week_05.day23ext;
 
 public class Main {
     public static void main(String[] args) {
-        Animal animal = new Cat();
-        Cat cat = (Cat) animal;
+        Cat cat = new Cat("Mruczan");
+        System.out.println(cat);
+        method(cat);
+        System.out.println(cat);
+    }
 
-        Cat cat1 = new Cat();
-        Animal animal1 = cat1;
-
-        if (animal1 instanceof Dog) {
-            Dog dog = (Dog) animal1;
-        }
-
+    public static void method(Cat cat) {
+        cat = new Cat("Olek");
+//        cat.setName("Olek");
+        System.out.println(cat);
     }
 }
 
