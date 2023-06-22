@@ -5,6 +5,9 @@ public class Dog extends Animal {
 
     public Dog(Leg leg) {
         this.leg = leg;
+
     }
+
+
 }
 
