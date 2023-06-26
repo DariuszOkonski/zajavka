@@ -6,7 +6,6 @@ public class App {
         Kangaroo kangaroo = new Kangaroo(bag, "Kinga", 10);
         System.out.println(kangaroo);
         var bag1 = kangaroo.getBag();
-        bag1.setSize(5);
         System.out.println(kangaroo);
     }
 }
