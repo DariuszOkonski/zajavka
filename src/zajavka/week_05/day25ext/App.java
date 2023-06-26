@@ -2,6 +2,11 @@ package zajavka.week_05.day25ext;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello");
+        Kangaroo kangaroo = new Kangaroo("Kinga", 10);
+
+        System.out.println(kangaroo);
+        kangaroo.withName("Daria").withAge(3);
+        System.out.println(kangaroo);
     }
 }
+
