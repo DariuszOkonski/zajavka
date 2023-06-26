@@ -1,8 +1,8 @@
 package zajavka.week_05.day25ext;
 
-public class Kangaroo {
-    private String name;
-    private int age;
+public final class Kangaroo {
+    private final String name;
+    private final int age;
 
     public Kangaroo(String name, int age) {
         this.name = name;
@@ -10,13 +10,11 @@ public class Kangaroo {
     }
 
     public Kangaroo withName(String name) {
-        this.name = name;
-        return this;
+        return new Kangaroo(name, this.age);
     }
 
     public Kangaroo withAge(int age) {
-        this.age = age;
-        return this;
+        return new Kangaroo(this.name, age);
     }
 
     @Override
