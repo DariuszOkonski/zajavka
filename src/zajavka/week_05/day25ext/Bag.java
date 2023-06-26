@@ -1,7 +1,7 @@
 package zajavka.week_05.day25ext;
 
-public class Bag {
-    private int size;
+public final class Bag {
+    final private int size;
 
     public Bag(int size) {
         this.size = size;
@@ -13,10 +13,6 @@ public class Bag {
 
     public int getSize() {
         return size;
-    }
-
-    public void setSize(int size) {
-        this.size = size;
     }
 
     @Override
