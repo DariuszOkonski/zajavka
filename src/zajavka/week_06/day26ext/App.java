@@ -4,9 +4,12 @@ import java.util.Arrays;
 
 public class App {
     public static void main(String[] args) {
+        Animal animal = Animal.SHARK;
 
-        for (Voicable voicable : Animal.values()) {
-            System.out.println(voicable.makeVoice());
-        }
+        animal.sign();
+
+//        for (Voicable voicable : Animal.values()) {
+//            System.out.println(voicable.makeVoice());
+//        }
     }
 }
