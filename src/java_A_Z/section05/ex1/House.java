@@ -23,6 +23,9 @@ public class House {
         this.numOfWindows = numOfWindows;
     }
 
+    public House(double area, String address) {
+    }
+
     @Override
     public String toString() {
         return "House{" +
