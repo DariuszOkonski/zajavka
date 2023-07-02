@@ -10,4 +10,11 @@ public class SteeringWheel {
     public SteeringWheel(double diameter) {
         this.diameter = diameter;
     }
+
+    @Override
+    public String toString() {
+        return "SteeringWheel{" +
+                "diameter=" + diameter +
+                '}';
+    }
 }
