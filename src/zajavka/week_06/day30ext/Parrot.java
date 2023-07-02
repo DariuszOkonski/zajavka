@@ -2,11 +2,12 @@ package zajavka.week_06.day30ext;
 
 public class Parrot {
     public static String name;
-    private String surname;
 
     static {
         name = "Statyczna Agata";
     }
+
+    private String surname;
 
     {
         name = "Niestatyczna Agata";

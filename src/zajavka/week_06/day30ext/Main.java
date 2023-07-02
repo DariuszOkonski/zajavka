@@ -1,15 +1,12 @@
 package zajavka.week_06.day30ext;
 
 public class Main {
-
-
     public static void main(String[] args) {
-        System.out.println(Parrot.name);
-        System.out.println("After static");
         Parrot parrot = new Parrot();
+        System.out.println("After 1st parrot");
+        Parrot parrot2 = new Parrot();
 
-
+        System.out.println("Before static");
+        System.out.println(Parrot.name);
     }
-
-
 }
