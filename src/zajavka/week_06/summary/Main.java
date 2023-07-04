@@ -6,4 +6,3 @@ public class Main {
         Order order2 = Order.CANCELLED;
     }
 }
-
