@@ -13,7 +13,7 @@ public class Driver {
 
     public void setAge(int age) {
         if (age < 18) {
-            throw new DrivingException("You cannot drive below 18 yo. Provided " + age + " years.");
+            throw new DriverToYoungException("You cannot drive below 18 yo. Provided " + age + " years.");
         }
         System.out.println("Setting driver's age to " + age);
         this.age = age;

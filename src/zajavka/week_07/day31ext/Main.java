@@ -6,12 +6,13 @@ public class Main {
         Driver ryszard = new Driver(16);
 
         try {
-            andrzej.setAge(37);
             ryszard.setAge(17);
-        } catch (DrivingException ex) {
+            andrzej.setAge(37);
+        } catch (DriverToYoungException ex) {
             System.out.println(ex.getMessage());
         }
 
+        System.out.println(andrzej.getAge());
     }
 }
 
