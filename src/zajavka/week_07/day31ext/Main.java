@@ -10,6 +10,8 @@ public class Main {
             andrzej.setAge(37);
         } catch (DriverToYoungException ex) {
             System.out.println(ex.getMessage());
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
         }
 
         System.out.println(andrzej.getAge());

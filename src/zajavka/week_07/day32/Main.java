@@ -4,4 +4,12 @@ public class Main {
     public static void main(String[] args) {
 
     }
+
+    private void method1(int arg) {
+
+    }
+
+    private void method1(String arg) {
+
+    }
 }
