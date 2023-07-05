@@ -12,10 +12,12 @@ public class Main {
     private static void drive(Driver driver, int age) {
         try {
             driver.setAge(age);
-        } catch (DriverToYoungException ex) {
+        } catch (DriverToYoungException | DriverTooLittleExperienceExcetpion ex) {
             System.out.println(ex.getMessage());
         } catch (DrivingException ex) {
             System.out.println("some message");
+        } catch (Exception ex) {
+            System.out.println("exception");
         }
     }
 }

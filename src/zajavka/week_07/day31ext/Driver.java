@@ -17,7 +17,7 @@ public class Driver {
         }
 
         if(age < 26) {
-            throw new DrivingException("You have to little driving experience");
+            throw new DriverTooLittleExperienceExcetpion("You have to little driving experience");
         }
         System.out.println("Setting driver's age to " + age);
         this.age = age;
