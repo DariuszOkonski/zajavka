@@ -5,16 +5,18 @@ public class Main {
         Driver andrzej = new Driver(36);
         Driver ryszard = new Driver(16);
 
+        drive(ryszard, 17);
+        drive(andrzej, 20);
+    }
+
+    private static void drive(Driver driver, int age) {
         try {
-            ryszard.setAge(17);
-            andrzej.setAge(37);
+            driver.setAge(age);
         } catch (DriverToYoungException ex) {
             System.out.println(ex.getMessage());
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
+        } catch (DrivingException ex) {
+            System.out.println("some message");
         }
-
-        System.out.println(andrzej.getAge());
     }
 }
 
