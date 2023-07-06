@@ -5,19 +5,7 @@ import java.io.IOException;
 public class Ship {
     private String name;
 
-    {
-        if(7 == 7) {
-            throw new IOException();
-        }
-
-    }
-
-    public Ship() throws IOException {
-        System.out.println("here");
-    }
-
-    public Ship(String name) throws IOException {
-        System.out.println("there");
+    public Ship(String name) {
         this.name = name;
     }
 }
