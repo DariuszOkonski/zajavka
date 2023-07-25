@@ -14,8 +14,16 @@ public class Main {
         londonsAttractions.add("Buckingham Palace");
         citiesAttractions.put("London", londonsAttractions);
 
-        System.out.println(citiesAttractions);
         Set<Map.Entry<String, List<String>>> entries = citiesAttractions.entrySet();
-        System.out.println(entries);
+
+        for (Map.Entry<String, List<String>> entry : entries) {
+            System.out.println(entry.getKey());
+            for (String attraction: entry.getValue()) {
+                System.out.println(entry.getKey() + ": " + attraction);
+            }
+        }
+
+        var citiesAttractionsKey = citiesAttractions.keySet();
+        System.out.println(citiesAttractionsKey);
     }
 }
