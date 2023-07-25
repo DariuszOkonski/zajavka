@@ -4,14 +4,20 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Map<String, String> map = new HashMap<>();
-        map.put("one", "Bartek");
-        map.put("two", "Karol");
-        map.put("three", "Marcin");
+        List<String> namesList = new ArrayList<>();
+        namesList.add("Czarek");
+        namesList.add("Marek");
+        namesList.add("Darek");
+        namesList.add("Arek");
 
-        Iterator<Map.Entry<String, String>> entries = map.entrySet().iterator();
-        while (entries.hasNext()) {
-            System.out.println(entries.next());
-        }
+        Cat cat = new Cat(namesList);
+        System.out.println(cat);
+
+        cat.getFriendsNames().add("Jarek");
+        System.out.println(cat);
+
+        namesList.add("Ogarek");
+        System.out.println(cat);
     }
 }
+
