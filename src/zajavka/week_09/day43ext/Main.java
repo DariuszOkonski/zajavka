@@ -12,7 +12,5 @@ public class Main {
 
         long between = ChronoUnit.DAYS.between(localDateTime, localDateTime2);
         System.out.println(between);
-
-
     }
 }
