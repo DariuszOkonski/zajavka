@@ -90,15 +90,15 @@ public class AmountsCalculationServiceImpl implements AmountsCalculationService{
         return amount
                 .multiply(q.pow(monthsDuration.intValue()))
                 .multiply(q.subtract(BigDecimal.ONE))
-                .divide(q.pow(monthsDuration.intValue()).subtract(BigDecimal.ONE), 10, RoundingMode.HALF_UP);
+                .divide(q.pow(monthsDuration.intValue()).subtract(BigDecimal.ONE), 50, RoundingMode.HALF_UP);
     }
     private BigDecimal calculateConstantCapitalAmount(BigDecimal rateAmount, BigDecimal interestAmount) {
         return rateAmount.subtract(interestAmount);
     }
     private BigDecimal calculateInterestAmount(BigDecimal residualAmount, BigDecimal interestPercent) {
-        return residualAmount.multiply(interestPercent).divide(YEAR, 10, RoundingMode.HALF_UP);
+        return residualAmount.multiply(interestPercent).divide(YEAR, 50, RoundingMode.HALF_UP);
     }
     private BigDecimal calculateDecreasingCapitalAmount(BigDecimal amount, BigDecimal monthsDuration) {
-        return amount.divide(monthsDuration, 10, RoundingMode.HALF_UP);
+        return amount.divide(monthsDuration, 50, RoundingMode.HALF_UP);
     }
 }
