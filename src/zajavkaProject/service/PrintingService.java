@@ -1,6 +1,10 @@
 package zajavkaProject.service;
 
 import zajavkaProject.model.InputData;
+import zajavkaProject.model.Rate;
+import zajavkaProject.model.Summary;
+
+import java.util.List;
 
 public interface PrintingService {
 
@@ -11,9 +15,10 @@ public interface PrintingService {
     String DATE = "DATA: ";
     String MONTHS = " MIESIECY";
     String RATE = "RATA: ";
-    String INTEREST = "OPROCENTOWANIE: ";
+    String INTEREST = "ODSETKI: ";
     String CAPITAL = "KAPITAL: ";
-    String LEFT = "POZOSTALO: ";
+    String LEFT_AMOUNT = "PKWOTA: ";
+    String LEFT_MONTHS = "PMSC: ";
     String MORTGAGE_AMOUNT = "KWOTA KREDYTU: ";
     String MORTGAGE_PERIOD = "OKRES KREDYTOWANIA: ";
 
@@ -21,4 +26,8 @@ public interface PrintingService {
     String NEW_LINE = "\n";
     String PERCENT = "% ";
     void printInputDataInfo(final InputData inputData);
+
+    void printRates(List<Rate> rates);
+
+    void printSummary(Summary summary);
 }
