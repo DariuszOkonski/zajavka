@@ -1,0 +1,25 @@
+package zajavka.week_11.innderClasses;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+
+public class BlockOfFlats {
+    private List<Flat> flats;
+
+    public BlockOfFlats(List<BigDecimal> areas) {
+        List<Flat> flats = new ArrayList<>();
+        for (BigDecimal area : areas) {
+            flats.add(new Flat(area));
+        }
+        this.flats = flats;
+    }
+
+    private class Flat {
+        private BigDecimal area;
+
+        public Flat(BigDecimal area) {
+            this.area = area;
+        }
+    }
+}
