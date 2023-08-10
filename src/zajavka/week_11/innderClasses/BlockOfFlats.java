@@ -7,6 +7,9 @@ import java.util.List;
 public class BlockOfFlats {
     private List<Flat> flats;
 
+    public BlockOfFlats() {
+    }
+
     public BlockOfFlats(List<BigDecimal> areas) {
         List<Flat> flats = new ArrayList<>();
         for (BigDecimal area : areas) {
@@ -15,11 +18,26 @@ public class BlockOfFlats {
         this.flats = flats;
     }
 
-    private class Flat {
+    public List<Flat> getFlats() {
+        return flats;
+    }
+
+    public static class Flat {
         private BigDecimal area;
 
         public Flat(BigDecimal area) {
             this.area = area;
+        }
+
+        public BigDecimal getArea() {
+            return area;
+        }
+
+        @Override
+        public String toString() {
+            return "Flat{" +
+                    "area=" + area +
+                    '}';
         }
     }
 }
