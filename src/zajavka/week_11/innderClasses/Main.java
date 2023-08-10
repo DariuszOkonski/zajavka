@@ -1,13 +1,12 @@
 package zajavka.week_11.innderClasses;
 
-import java.math.BigDecimal;
-import java.util.List;
+import java.util.function.Predicate;
 
 public class Main {
     public static void main(String[] args) {
-        BlockOfFlats.Flat flat = new BlockOfFlats.Flat(BigDecimal.TEN);
+        String a = "zajavkaA";
 
-        System.out.println(flat);
+        Predicate<Integer> somePredicate = someInt -> a.length() > someInt;
     }
 }
 
