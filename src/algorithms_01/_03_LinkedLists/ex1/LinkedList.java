@@ -1,4 +1,4 @@
-package algorithms_01._03_LinkedLists;
+package algorithms_01._03_LinkedLists.ex1;
 
 public class LinkedList<T extends Comparable<T>> implements List<T> {
     // this is the head node or root node

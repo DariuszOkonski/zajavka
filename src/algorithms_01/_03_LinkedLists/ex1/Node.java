@@ -1,4 +1,4 @@
-package algorithms_01._03_LinkedLists;
+package algorithms_01._03_LinkedLists.ex1;
 
 public class Node<T extends Comparable<T>> {
     //this is the data we store in the data structure
