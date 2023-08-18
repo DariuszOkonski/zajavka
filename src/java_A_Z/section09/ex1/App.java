@@ -4,16 +4,12 @@ import java.util.Arrays;
 
 public class App {
     public static void main(String[] args) {
-        String[] names = {"Adam", "Kevin", "Joe"};
+        int[] nums1 = {1,5,3,10,15,0};
+        int[] nums2 = {1,5,3,10,15,0};
+        int[] copyArray = Arrays.copyOf(nums1, nums1.length);
 
-        for (String name : names) {
-            System.out.println(name);
-        }
-        System.out.println("===");
-
-        int[] numbers = {1,5,3,-2,10,8};
-        for (int number : numbers) {
-            System.out.println(number);
-        }
+        System.out.println(Arrays.toString(copyArray));
+        System.out.println(copyArray);
+        System.out.println(nums1);
     }
 }
