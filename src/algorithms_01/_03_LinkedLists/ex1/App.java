@@ -5,7 +5,11 @@ public class App {
         LinkedList<String> names = new LinkedList<>();
         names.insert("Adam");
         names.insert("Daniel");
+        names.insert("Michael");
+        names.insert("Kevin");
         names.insert("Ana");
+
+        System.out.println("middle item: " + names.getMiddleNode());
 
         names.travers();
         System.out.println("===");
@@ -24,5 +28,17 @@ public class App {
         System.out.println("---");
         people.remove(p);
         people.travers();
+
+        System.out.println("==================================");
+        LinkedList<Integer> myLinkedList = new LinkedList<>();
+        myLinkedList.insert(10);
+        myLinkedList.insert(2);
+        myLinkedList.insert(13);
+        myLinkedList.insert(5);
+        myLinkedList.travers();
+        System.out.println("===");
+        myLinkedList.reverse();
+        myLinkedList.travers();
+
     }
 }
