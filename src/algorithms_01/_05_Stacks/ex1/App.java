@@ -2,6 +2,15 @@ package algorithms_01._05_Stacks.ex1;
 
 public class App {
     public static void main(String[] args) {
+        Stack<String> names = new Stack<>();
+        names.push("Adam");
+        names.push("Ana");
+        names.push("Kevin");
+        names.push("Michael");
 
+        while (!names.isEmpty()) {
+            System.out.println(names.pop());
+        }
     }
 }
+
