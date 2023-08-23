@@ -1,4 +1,4 @@
-package designPatterns.section_02_S.ex1;
+package designPatterns.section_03_SingleResponsibilityPrinciple.ex1;
 
 import java.util.Scanner;
 
