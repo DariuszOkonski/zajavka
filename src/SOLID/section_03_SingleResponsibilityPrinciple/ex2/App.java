@@ -1,4 +1,4 @@
-package designPatterns.section_03_SingleResponsibilityPrinciple.ex2;
+package SOLID.section_03_SingleResponsibilityPrinciple.ex2;
 
 import java.util.ArrayList;
 import java.util.Collections;
