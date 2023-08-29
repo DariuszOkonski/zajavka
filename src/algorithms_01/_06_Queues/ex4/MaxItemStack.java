@@ -26,6 +26,15 @@ public class MaxItemStack {
         }
     }
 
+    public int pop() {
+        maxStack.pop();
+        return maxStack.pop();
+    }
+
+    public int getMaxItem() {
+        return maxStack.peek();
+    }
+
     @Override
     public String toString() {
         return "MaxItemStack{" +
