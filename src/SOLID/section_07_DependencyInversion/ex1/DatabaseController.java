@@ -1,4 +1,4 @@
-package SOLID.section_07_DepndencyInversion.ex1;
+package SOLID.section_07_DependencyInversion.ex1;
 
 // the high level module
 public class DatabaseController {
