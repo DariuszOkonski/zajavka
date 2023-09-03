@@ -14,8 +14,8 @@ public class App {
         print(animals);
         print(dogs);
         print(monkeys);
-        print(strings);
-        print(implementingVoiceables);
+//        print(strings);
+//        print(implementingVoiceables);
 
         List<? extends Animal> list = dogs;
     }
