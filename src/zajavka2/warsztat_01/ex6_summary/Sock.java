@@ -1,6 +1,6 @@
 package zajavka2.warsztat_01.ex6_summary;
 
-public class Sock<T> {
+public class Sock<T extends Swimmable> {
     private T item;
 
     public boolean put(T element) {
