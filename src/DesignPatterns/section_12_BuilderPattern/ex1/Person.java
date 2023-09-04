@@ -6,6 +6,7 @@ public class Person {
     private String address;
     private int age;
     private String university;
+    private String nameOfMother;
 
     public Person(Builder builder) {
         this.name = builder.name;
@@ -13,6 +14,7 @@ public class Person {
         this.address = builder.address;
         this.age = builder.age;
         this.university = builder.university;
+        this.nameOfMother = builder.nameOfMother;
     }
 
     @Override
@@ -23,6 +25,7 @@ public class Person {
                 ", address='" + address + '\'' +
                 ", age=" + age +
                 ", university='" + university + '\'' +
+                ", nameOfMother='" + nameOfMother + '\'' +
                 '}';
     }
 
@@ -32,6 +35,7 @@ public class Person {
         private String address;
         private int age;
         private String university;
+        private String nameOfMother;
 
         public Builder(String name, String email) {
             this.name = name;
@@ -50,6 +54,11 @@ public class Person {
 
         public Builder setUniversity(String university) {
             this.university = university;
+            return this;
+        }
+
+        public Builder setNameOfMother(String nameOfMother) {
+            this.nameOfMother = nameOfMother;
             return this;
         }
 

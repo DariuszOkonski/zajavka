@@ -5,11 +5,10 @@ public class App {
         Person person = new Person.Builder("Kevin", "kevin@gmail.com")
                 .setAge(15)
                 .setAddress("Hudson Street")
+                .setNameOfMother("Jane")
                 .build();
 
         System.out.println(person);
-
-
     }
 }
 
