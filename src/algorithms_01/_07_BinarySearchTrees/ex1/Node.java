@@ -4,7 +4,7 @@ public class Node<T> {
     private T data;
     private Node<T> leftChild;
     private Node<T> rightChild;
-    private Node<T> parentNode; // when implementing the remove method
+    private Node<T> parentNode;
 
     public Node(T data, Node<T> parentNode) {
         this.data = data;
