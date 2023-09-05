@@ -1,4 +1,4 @@
-package zajavka2.warsztat_01.ex13_Generics_ex;
+package zajavka2.warsztat_01.ex13_Generics_ex.ex1;
 
 import java.util.List;
 
