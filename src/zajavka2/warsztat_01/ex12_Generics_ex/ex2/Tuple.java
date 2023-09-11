@@ -1,4 +1,4 @@
-package zajavka2.warsztat_01.ex13_Generics_ex.ex2;
+package zajavka2.warsztat_01.ex12_Generics_ex.ex2;
 
 public class Tuple {
     private Object key;

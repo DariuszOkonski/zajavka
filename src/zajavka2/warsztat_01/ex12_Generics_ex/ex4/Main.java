@@ -1,7 +1,6 @@
-package zajavka2.warsztat_01.ex13_Generics_ex.ex4;
+package zajavka2.warsztat_01.ex12_Generics_ex.ex4;
 
 import java.util.Arrays;
-import java.util.Collection;
 
 public class Main {
     public static void main(String[] args) {

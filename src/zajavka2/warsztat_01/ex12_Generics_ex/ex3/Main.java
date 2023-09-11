@@ -1,4 +1,4 @@
-package zajavka2.warsztat_01.ex13_Generics_ex.ex3;
+package zajavka2.warsztat_01.ex12_Generics_ex.ex3;
 
 import java.util.Arrays;
 import java.util.Collection;
