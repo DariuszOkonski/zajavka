@@ -2,11 +2,15 @@ package DesignPatterns.section_10_Singleton.ex1;
 
 public class App {
     public static void main(String[] args) {
-        DatabaseConnector object1 = DatabaseConnector.getInstance();
-        DatabaseConnector object2 = DatabaseConnector.getInstance();
+       Database.INSTANCE.connect();
+       Database.INSTANCE.disconnect();
 
-        System.out.println(object1 == object2);
-        System.out.println(object1.equals(object2));
+       Database o1 = Database.INSTANCE;
+       Database o2 = Database.INSTANCE;
+
+       if(o1 == o2){
+           System.out.println("The objects are the same");
+       }
     }
 }
 

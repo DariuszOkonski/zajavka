@@ -1,14 +1,12 @@
-package DesignPatterns.section_10_Singleton.ex2;
+package DesignPatterns.section_10_Singleton.ex1;
 
 public enum Database {
-    // acquiring the INSTANCE is thread safe
     INSTANCE;
-
     public void connect() {
         System.out.println("Connecting to the database...");
     }
 
     public void disconnect() {
-        System.out.println("Disconnect to the database...");
+        System.out.println("Disconnecting the database...");
     }
 }
