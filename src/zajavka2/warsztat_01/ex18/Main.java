@@ -23,12 +23,12 @@ public class Main {
         print(employeeList);
 //        Collections.sort(employeeList);
 
-        Comparator<Employee> employeeComparator = Comparator.<Employee, String>comparing(employee -> employee.getName())
+        Comparator<Employee> employeeComparator = Comparator.<Employee, String>comparing(employee -> employee.getName()).reversed()
                 .thenComparing((e1, e2) -> e2.getSurname().compareTo(e1.getSurname()))
                 .thenComparing(employee -> employee.getAge())
                 .thenComparing((e1, e2) -> e2.getSalary().compareTo(e1.getSalary()));
 
-        Collections.sort(employeeList, employeeComparator);
+        Collections.sort(employeeList, employeeComparator.reversed());
         print(employeeList);
 
     }
