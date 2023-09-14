@@ -5,6 +5,7 @@ public class App {
         InterviewQuestionProcessor.process(new FinanceInterviewQuestion());
         InterviewQuestionProcessor.process(new AIInterviewQuestion());
         InterviewQuestionProcessor.process(new AlgorithmsInterviewQuestion());
+        InterviewQuestionProcessor.process(new CSInterviewQuestion());
     }
 }
 
