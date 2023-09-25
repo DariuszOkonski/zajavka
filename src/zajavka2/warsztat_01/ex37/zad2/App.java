@@ -22,21 +22,28 @@ public class App {
         Map<String, List<Person>> phoneBook = new TreeMap<>();
 
         for (Person person : peopleList) {
-            List<Person> bySurnameList =
-                    !phoneBook.containsKey(person.getSurname())
-                    ? new ArrayList<>()
-                    : phoneBook.get(person.getSurname());
-
-            bySurnameList.add(person);
-//            bySurnameList.sort((p1, p2) -> p1.getName().compareTo(p2.getName()));
-            bySurnameList.sort(Comparator.comparing(person1 -> person1.getName()));
-            phoneBook.put(person.getSurname(), bySurnameList);
+            addPersonToPhoneBook(phoneBook, person);
         }
 
         System.out.println("#####");
         for (Map.Entry<String, List<Person>> entry : phoneBook.entrySet()) {
             System.out.println(entry);
         }
+    }
+
+    private static void addPersonToPhoneBook(Map<String, List<Person>> phoneBook, Person person) {
+        List<Person> bySurnameList =
+                getSurnameList(phoneBook, person);
+
+        bySurnameList.add(person);
+        bySurnameList.sort(Comparator.comparing(person1 -> person1.getName()));
+        phoneBook.put(person.getSurname(), bySurnameList);
+    }
+
+    private static List<Person> getSurnameList(Map<String, List<Person>> phoneBook, Person person) {
+        return !phoneBook.containsKey(person.getSurname())
+                ? new ArrayList<>()
+                : phoneBook.get(person.getSurname());
     }
 }
 
