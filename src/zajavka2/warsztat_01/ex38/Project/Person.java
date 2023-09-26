@@ -14,6 +14,11 @@ public class Person {
     }
 
     private String generateId() {
-        return this.name + "_" + this.surname + "_" + this.counter;
+        return String.format("%s_%s_%s", this.name, this.surname, this.counter);
+    }
+
+    @Override
+    public String toString() {
+        return id;
     }
 }
