@@ -16,10 +16,12 @@ public class App {
                 "ADD_PERSON(Rafał_Adamczuk)",
                 "ADD_PERSON(Tomasz_Romański)",
                 "ADD_PERSON(Mariusz_Wilczek)",
-                "ADD_PERSON(Zbigniew_Ratownik)"
+                "ADD_PERSON(Zbigniew_Ratownik)",
+                "PROCESS",
+                "LEAVE_PERSON(Tomasz_Romański_2)",
+                "LEAVE_PERSON(Mariusz_Wilczek)",
+                "LEAVE_PERSON(Mariusz_Wilk)"
 //                "PROCESS",
-//                "LEAVE_PERSON(Tomasz_Romański_2)",
-//                "LEAVE_PERSON(Mariusz_Wilczek)",
 //                "PROCESS",
 //                "PROCESS",
 //                "PROCESS"

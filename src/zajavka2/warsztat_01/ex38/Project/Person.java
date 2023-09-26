@@ -1,5 +1,7 @@
 package zajavka2.warsztat_01.ex38.Project;
 
+import java.util.Objects;
+
 public class Person {
     private final String name;
     private final String surname;
@@ -15,6 +17,21 @@ public class Person {
 
     private String generateId() {
         return String.format("%s_%s_%s", this.name, this.surname, this.counter);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Person person = (Person) o;
+
+        return Objects.equals(id, person.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return id != null ? id.hashCode() : 0;
     }
 
     @Override
