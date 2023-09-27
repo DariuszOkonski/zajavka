@@ -9,7 +9,7 @@ public class PersonCommandProcessor {
 
     public void processCommand(String command) {
         if(command.contains("ADD_PERSON")) {
-            handleAddPerson(command);
+            handleAddPerson(command, command.contains("VIP"));
         } else if(command.contains("LEAVE_PERSON")) {
             handleLeavePerson(command);
         } else if(command.contains("PROCESS")) {
@@ -18,18 +18,22 @@ public class PersonCommandProcessor {
             throw new RuntimeException("O co Ci chodzi? z tą komendą: " + command);
         }
     }
-
-    private void handleAddPerson(String command) {
+    private void handleAddPerson(String command, Boolean isVip) {
         System.out.println(command);
-        Person incomingPerson = createIncomingPerson(command);
-        customQueue.welcome(incomingPerson);
+        Person incomingPerson = createIncomingPerson(command, isVip);
+
+        if(isVip) {
+            customQueue.welcomeVip(incomingPerson);
+        } else {
+            customQueue.welcome(incomingPerson);
+        }
 
     }
 
-    private Person createIncomingPerson(String command) {
+    private Person createIncomingPerson(String command, Boolean isVip) {
         String personKey = command
                 .replace("ADD_PERSON(", "")
-                .replace(")", "");
+                .replace(isVip ? "),VIP" : ")", "");
 
         String[] split = personKey
                 .split("_");
@@ -42,7 +46,6 @@ public class PersonCommandProcessor {
     }
 
     private void handleLeavePerson(String command) {
-        //        "LEAVE_PERSON(Tomasz_Romański_2)",
         System.out.println(command);
         Person person = createLeavingPerson(command);
         customQueue.leave(person);
