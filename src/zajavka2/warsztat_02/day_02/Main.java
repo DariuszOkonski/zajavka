@@ -8,7 +8,7 @@ public class Main {
             return value.length() + value2.length();
         };
 
-        System.out.println(iLambda.countsChars("Zajavka", "hello"));
+        iLambda.countsChars("Zajavka", "hello");
     }
 }
 
