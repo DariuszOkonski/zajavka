@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class Main {
+public class PredicateExample {
     public static void main(String[] args) {
         List<String> cities = new ArrayList<>();
         cities.add("Szczecin");
@@ -12,8 +12,13 @@ public class Main {
         cities.add("Zakopane");
 
         Predicate<String> predicate = c -> c.contains("i");
-        print(cities, predicate);
+        print(cities, PredicateExample::stringTest);
 
+    }
+
+    private static boolean stringTest(String input) {
+        System.out.println("String test");
+        return input.contains("i");
     }
 
     private static void print(final List<String> cities, Predicate<String> checker) {
