@@ -1,15 +1,19 @@
 package zajavka2.warsztat_02.project_01;
 
-import java.util.Optional;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Supplier;
-
 public class Main {
     public static void main(String[] args) {
-        Function<String, Integer> myFunction = Transformer.getFunctionImpl();
-        Optional<Integer> myOptional = Optional.of("myString").map(myFunction);
-        System.out.println(myOptional);
+        MyConsumer myConsumer = new MyConsumer();
+        myConsumer.consumeConsumer(System.out::println);
+        myConsumer.consumeSupplier(() -> "123");
+        myConsumer.consumeFunction(Object::toString);
+
+//        Function<String, Integer> myFunction = Transformer.getFunctionImpl();
+//        Optional<Integer> myOptional = Optional.of("myString").map(myFunction);
+//        System.out.println(myOptional);
+//
+//        UnaryOperator<BigDecimal> myUnaryOperator = Transformer.getUnaryOperatorImpl();
+//        Optional<BigDecimal> myResult = Optional.of(BigDecimal.valueOf(3.14)).map(myUnaryOperator);
+//        System.out.println(myResult);
 
 
 //        Producer<String> myProducer = new Producer<>();
