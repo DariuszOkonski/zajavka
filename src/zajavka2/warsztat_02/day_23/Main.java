@@ -2,6 +2,7 @@ package zajavka2.warsztat_02.day_23;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Stream;
 
 public class Main {
@@ -12,9 +13,7 @@ public class Main {
         integerList.add(3);
         integerList.add(8);
 
-        Stream<Integer> stream = integerList.stream();
-                stream.reduce(0, (currentState, nextValue) -> currentState + nextValue);
-                stream.reduce(0, (currentState, nextValue) -> currentState + nextValue);
-
+        Optional<Integer> first = integerList.stream().findFirst();
+        System.out.println(first);
     }
 }
